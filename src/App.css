@@ -70,8 +70,8 @@ hr{border: 0;
 
 
 
-  @media (min-width: 551px) and (max-width: 767px) {
-
-  } .form{
-    width: 70vw;
-  }
+  @media (min-width: 551px) and (max-width: 700px) {
+    .form{
+      width: 70vw;
+    }
+  } 
