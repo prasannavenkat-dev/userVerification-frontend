@@ -47,7 +47,7 @@ function App() {
 console.log(data);
     async function postData(){
       try {
-        const response = await fetch(`http://localhost:4000/${endpoint}`, requestOptions);
+        const response = await fetch(`https://userverificationapp.herokuapp.com/${endpoint}`, requestOptions);
         const result =  await response.json()
         setMessage(result)
         console.log(result);
