@@ -3,12 +3,11 @@ import Login from "./components/login/Login";
 import OtpVerify from "./components/otp-verify/OtpVerify";
 import Signup from "./components/signup/Signup";
 import Toasts from "./components/toasts/Toasts";
-import Account from "./components/account/Account";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
-  useNavigate
+  Navigate
 } from "react-router-dom";
 import { useState } from "react";
 
@@ -73,7 +72,9 @@ console.log(data);
             <Route path="/login"  element={<Login handleSubmit={handleSubmit} mail={mail} handleMail={handleMail} password={password} handlePassword={handlePassword} />}/>
             <Route path="/signup"  element={<Signup handleSubmit={handleSubmit} fullName={fullName} handleFullName={handleFullName} age={age} handleAge={handleAge} gender={gender} handleGender={handleGender} mail={mail} handleMail={handleMail} password={password} handlePassword={handlePassword}/>}/>
             <Route path="/verification"  element={<OtpVerify handleSubmit={handleSubmit} mail={mail} handleMail={handleMail}/>} />
-            <Route path="/account" element={<Account message={message}/>}/>
+            <Route path="/" element={<Navigate to="/login" />} />
+            <Route path="*" element={<Navigate to="/login" />} />
+
              
 
             </Routes>
