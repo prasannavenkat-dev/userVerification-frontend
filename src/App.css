@@ -60,3 +60,18 @@ hr{border: 0;
   height: auto;
 
 }
+
+
+@media(max-width:550px){
+.form{
+  width: 90vw;
+}
+}
+
+
+
+  @media (min-width: 551px) and (max-width: 767px) {
+
+  } .form{
+    width: 70vw;
+  }
